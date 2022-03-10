@@ -27,6 +27,7 @@ setup(
     include_package_data=True,
     python_requires=">=3.6",
     install_requires=["tutor"],
+    setup_requires=["setuptools-scm"],
     entry_points={
         "tutor.plugin.v0": [
             "{{ cookiecutter.plugin_name }} = {{ cookiecutter.module_name }}.plugin"
